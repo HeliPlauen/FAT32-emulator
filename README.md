@@ -20,6 +20,7 @@ In this case the application creates a FAT32 image which has a size 20Mb.
 8. If the backed file does not contain a valid FAT32 filesystem then all commands (except for "format") output an error message.
 
 
+
 The program has limitations:
 
 0. NO WHITESPACES in DIRECTORY names!!!
@@ -33,3 +34,11 @@ The program has limitations:
 4. The "ls" command  works only with a current dirrectory and does not show hidden liles and dirrectories.
 
 5. The command "format" may work executedly!
+
+
+
+How to compile and run:
+
+clang FAT32SumEmul.c
+
+./a filename.img
